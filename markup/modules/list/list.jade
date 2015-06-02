@@ -1,0 +1,17 @@
+mixin list()
+	.wrapper
+		section.list
+			.list__header Плетение красивого браслета из резинок (Rainbow Loom)
+			.list__rating
+			.list__items
+				- for(var i = 0; i < 5; i++) {
+					img(src="%=staticPrefix=%images/general/img.png" alt="")
+				- }
+			.list__meta
+				.list-user
+					img(src="%=staticPrefix=%images/general/ava.png" alt="")
+					span Мария Рукодельница
+				.list-date Размещено:  21.05.2015 15:45
+				.list-like
+					img(src="%=staticPrefix=%images/general/like.png" alt="")
+				a(href="#" title="").btn.btn--list Читать полностью

@@ -1,0 +1,8 @@
+mixin top(data)
+	- if (data == undefined) data = ''
+	section.top(class="#{data}")
+		.wrapper
+			.top__content
+				- if (data == undefined) {
+					a(href="#" title="").btn.btn--top Вступить в клуб
+				- }

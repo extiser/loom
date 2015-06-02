@@ -1,0 +1,46 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	&__logo {
+		@include bg($logo);
+	}
+
+	&__users {
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			@include bg($user);
+			left: -33px;
+		}
+		strong {
+			display: block;
+			font-size: 18px;
+			color: #93c96b;
+			line-height: 10px;
+		}
+		span {
+			font-size: 12px;
+			color: #6d6f76;
+		}
+	}
+
+	&__login {
+		a {
+			font-size: 15px;
+			color: #666;
+			padding-left: 15px;
+			&:first-child {
+				padding-left: 0;
+				padding-right: 15px;
+				border-right: 1px solid #e5e5e5;
+			}
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+}

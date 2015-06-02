@@ -1,0 +1,42 @@
+.social {
+	background: #FAF8F6;
+	padding-bottom: 150px;
+	&__title {
+		font-size: 22px;
+		color: #55a01d;
+		width: 400px;
+		margin: auto;
+		text-align: center;
+	}
+
+	.social-btn {
+		width: 600px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 30px auto 0;
+		&__item {
+			display: block;
+			text-decoration: none;
+			margin-bottom: 10px;
+			&--vk {
+				@include bg($vk);
+			}
+			&--ok {
+				@include bg($ok);
+			}
+			&--fb {
+				@include bg($fb);
+			}
+			&--tw {
+				@include bg($tw);
+			}
+			&--gp {
+				@include bg($gp);
+			}
+			&--mr {
+				@include bg($mr);
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.top {
+	margin-top: 20px;
+	min-height: 275px;
+	background: #faf8f6 url(../images/general/top-bg.png) no-repeat center center;
+	&__content {
+		text-align: center;
+		min-height: 275px;
+		background: url(../images/general/top.png) no-repeat center center;
+	}
+
+	&--reg {
+		background-image: none;
+
+		.top__content {
+			background: url(../images/general/top-reg.png) no-repeat center center;
+		}
+	}
+}
